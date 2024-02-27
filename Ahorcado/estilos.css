@@ -1,0 +1,97 @@
+ /* Estilos CSS para dar formato a la página */
+ body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center,
+          rgba(19, 0, 20, 0.8) 0%,
+          rgba(26, 1, 34, 0.9) 25%,
+          rgb(14, 0, 17)),
+      radial-gradient(circle at top left,
+          rgba(255, 255, 255, 0.329) 5%,
+          transparent 20%),
+      radial-gradient(circle at top right,
+          rgba(40, 2, 71, 0.699) 5%,
+          transparent 20%),
+      radial-gradient(circle at bottom left,
+          rgba(255, 255, 255, 0.877) 5%,
+          transparent 20%),
+      radial-gradient(circle at bottom right,
+          rgba(20, 2, 87, 0.295) 5%,
+          transparent 20%);
+  background-color: #0e002777;
+  background-size: 100% 100%, 40px 40px, 40px 40px, 40px 40px, 40px 40px;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+/* Estilos para el contenedor principal */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Estilos para el área de dibujo del ahorcado */
+#canvas {
+  background-color: #ff65655b;
+  border: 4px solid #2c2238;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Estilos para mostrar la palabra a adivinar */
+#wordDisplay {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para los botones de letras */
+#letterButtonsContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+}
+
+/* Estilos para mostrar las letras adivinadas y las oportunidades restantes */
+#guessesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+#guessesDisplay {
+  font-size: 18px;
+  color: #003744;
+  margin-top: 10px;
+}
+
+/* Estilos para los botones de letras */
+button {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2c2238;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
