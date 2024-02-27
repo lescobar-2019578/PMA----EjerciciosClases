@@ -1,0 +1,213 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AdoptionAnimal",
+    "dateExported": "2024-02-27T03:02:51.642Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "aad92195-a5d8-442d-9180-bded0a05b394",
+            "name": "Appointment",
+            "containerId": "",
+            "created": "2024-02-27T02:34:11.582Z",
+            "sortNum": 10000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNGIxZmNmNDdiYzIwOTY0YzJkZTIiLCJ1c2VybmFtZSI6Imxlc2NvYmFyIiwibmFtZSI6IkxsYW5lbCIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkwMDI1NTMsImV4cCI6MTcwOTAxMzM1M30.c0frVWqtc3sVqYfKTX8J4aQYYmtif6QcciseDo9qQU8",
+                        "isDisabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "a84f4f67-4cf6-4b37-940a-459035929747",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-27T02:35:38.519Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "af58e415-778d-4cc8-a3cd-cb672da3c8b8",
+            "name": "Animal",
+            "containerId": "",
+            "created": "2024-02-27T02:35:44.775Z",
+            "sortNum": 30000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNGIxZmNmNDdiYzIwOTY0YzJkZTIiLCJ1c2VybmFtZSI6Imxlc2NvYmFyIiwibmFtZSI6IkxsYW5lbCIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDkwMDE1NjMsImV4cCI6MTcwOTAxMjM2M30.z8u2J9YMFElaAHgKSVw7kfy3c0mzSgHD10sNFqboD-4"
+                    }
+                ]
+            }
+        }
+    ],
+    "requests": [
+        {
+            "_id": "86995ac0-db1a-4583-b6e1-9f9918dc153f",
+            "colId": "0a2ce06a-0414-473e-9902-a5326e9c04d6",
+            "containerId": "aad92195-a5d8-442d-9180-bded0a05b394",
+            "name": "Test",
+            "url": "appointment/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T02:34:33.285Z",
+            "modified": "2024-02-27T03:02:26.367Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNGUyYzQ2YTYyMjMxZWYyZjEzODUiLCJ1c2VybmFtZSI6Imxlb3RldGUiLCJuYW1lIjoiTGxhbmVsIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwOTAwMjgzMCwiZXhwIjoxNzA5MDEzNjMwfQ.tbU6moEvPxQZc96AYPKsH5EbYt1FpqHsJ_wP4aSfhtE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "date",
+                        "value": "2024-02-23"
+                    },
+                    {
+                        "name": "status",
+                        "value": "CREATED",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "animal",
+                        "value": "65dd4e7246a62231ef2f1388"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65dd4e2c46a62231ef2f1385",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac0f303d-2ebd-43ec-abc3-d32b89923340",
+            "colId": "0a2ce06a-0414-473e-9902-a5326e9c04d6",
+            "containerId": "a84f4f67-4cf6-4b37-940a-459035929747",
+            "name": "register",
+            "url": "register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-27T02:36:26.695Z",
+            "modified": "2024-02-27T02:51:24.412Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Llanel"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Escobar"
+                    },
+                    {
+                        "name": "username",
+                        "value": "leotete"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "lescobar-2019578@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "30331603"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "73a8731b-ff89-44f4-9b40-3f62da7509ad",
+            "colId": "0a2ce06a-0414-473e-9902-a5326e9c04d6",
+            "containerId": "a84f4f67-4cf6-4b37-940a-459035929747",
+            "name": "login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-27T02:38:29.527Z",
+            "modified": "2024-02-27T03:00:30.934Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "leotete"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b83868d0-7fac-4b36-8548-c725f9d4ccae",
+            "colId": "0a2ce06a-0414-473e-9902-a5326e9c04d6",
+            "containerId": "af58e415-778d-4cc8-a3cd-cb672da3c8b8",
+            "name": "save",
+            "url": "animal/save",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-27T02:40:20.255Z",
+            "modified": "2024-02-27T02:52:34.713Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "cate"
+                    },
+                    {
+                        "name": "description",
+                        "value": "verde"
+                    },
+                    {
+                        "name": "age",
+                        "value": "10"
+                    },
+                    {
+                        "name": "type",
+                        "value": "ave"
+                    },
+                    {
+                        "name": "keeper",
+                        "value": "65dd4e2c46a62231ef2f1385"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}

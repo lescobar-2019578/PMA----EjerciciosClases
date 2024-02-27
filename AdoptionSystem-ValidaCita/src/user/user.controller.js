@@ -5,7 +5,6 @@ import {    encrypt,
             checkPassword, 
             checkUpdate 
         } from '../utils/validator.js'
-
 import { generateJwt } from '../utils/jwt.js'
 
 export const test = (req, res)=>{
@@ -46,14 +45,16 @@ export const login = async(req, res)=>{
                 name: user.name,
                 role: user.role
             }
-            //Genero token
+            //Generar el Token
             let token = await generateJwt(loggedUser)
             //Respondo al usuario
             return res.send(
                 {
-                        message: `Welcome ${loggedUser.name}`,
-                        loggedUser, 
-                        token})
+                    message: `Welcome ${loggedUser.name}`, 
+                    loggedUser,
+                    token
+                }
+            )
         }
         return res.status(404).send({message: 'Invalid credentials'})
     }catch(err){
@@ -105,4 +106,3 @@ export const deleteU = async(req, res)=>{
         return res.status(500).send({message: 'Error deleting account'})
     }
 }
-
